@@ -29,7 +29,7 @@ header {
 }
 
 nav {
-  margin-right: 9rem;
+  width: 48%;
 }
 
 nav li{
@@ -48,27 +48,6 @@ nav a {
 
 nav a:hover {
   color: gray;
-}
-
-@media only screen and (max-width: 1000px) {
-  nav li {
-    padding: 0 0.8rem;
-  }
-}
-
-@media only screen and (max-width: 864px) {
-  header {
-    padding: 1rem 1rem 1rem 1rem;
-  }
-  header h2 {
-    display: none;
-  }
-  h2 {
-    font-size: 1.5rem;
-  }
-  p, a {
-    font-size: 1rem;
-  }
 }
 
 /*styling about me section */
@@ -115,6 +94,7 @@ aside img {
 /*styling contacts section */
 #contacts {
   padding: 0 4rem;
+  margin-top: 1.5rem;
 }
 
 #contacts a {
