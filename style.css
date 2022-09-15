@@ -28,18 +28,26 @@ header {
   align-items: center;
 }
 
+nav {
+  margin-right: 9rem;
+}
+
 nav li{
   list-style-type: none;
   float: left;
-  padding: 0 1.5rem;
+  padding: 0 2rem;
 }
 
 nav a {
   text-decoration: none;
   color: black;
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: bold;
+}
+
+nav a:hover {
+  color: gray;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -101,11 +109,21 @@ aside img {
 /*styling skills section */
 #skills {
   padding: 0 4rem;
+  height: 10rem;
 }
 
 /*styling contacts section */
 #contacts {
   padding: 0 4rem;
+}
+
+#contacts a {
+  text-decoration: none;
+  color: black;
+}
+
+#contacts a:hover {
+  color: gray;
 }
 
 /*styling footer section */
