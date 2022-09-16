@@ -8,19 +8,3 @@ styles/fontawesome-free-6.2.0-web/svgs
 styles/fontawesome-free-6.2.0-web/webfonts
 
 # ignore all fontawesome files css not used
-styles/fontawesome-free-6.2.0-web/css/brands.css
-styles/fontawesome-free-6.2.0-web/css/brands.min.css
-styles/fontawesome-free-6.2.0-web/css/fontawesome.css
-styles/fontawesome-free-6.2.0-web/css/fontawesome.min.css
-styles/fontawesome-free-6.2.0-web/css/regular.css
-styles/fontawesome-free-6.2.0-web/css/regular.min.css
-styles/fontawesome-free-6.2.0-web/css/solid.css
-styles/fontawesome-free-6.2.0-web/css/solid.min.css
-styles/fontawesome-free-6.2.0-web/css/svg-with-js.css
-styles/fontawesome-free-6.2.0-web/css/svg-with-js.min.css
-styles/fontawesome-free-6.2.0-web/css/v4-font-face.css
-styles/fontawesome-free-6.2.0-web/css/v4-font-face.min.css
-styles/fontawesome-free-6.2.0-web/css/v4-shims.css
-styles/fontawesome-free-6.2.0-web/css/v4-shims.min.css
-styles/fontawesome-free-6.2.0-web/css/v5-font-face.css
-styles/fontawesome-free-6.2.0-web/css/v5-font-face.min.css
