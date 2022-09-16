@@ -1,10 +1,1 @@
-# ignore all fontawesome files without css
-styles/fontawesome-free-6.2.0-web/js
-styles/fontawesome-free-6.2.0-web/less
-styles/fontawesome-free-6.2.0-web/metadata
-styles/fontawesome-free-6.2.0-web/scss
-styles/fontawesome-free-6.2.0-web/sprites
-styles/fontawesome-free-6.2.0-web/svgs
-styles/fontawesome-free-6.2.0-web/webfonts
 
-# ignore all fontawesome files css not used
