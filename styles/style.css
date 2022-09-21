@@ -16,8 +16,6 @@ p, a {
   font-size: 1.2rem;
 }
 
-
-
 /* styling the header */
 header {
   display: flex;
@@ -95,7 +93,12 @@ aside img {
 
 .icon-container {
   position: relative;
-  margin-right: 2rem;
+  padding: 1rem;
+  margin: 0 1rem;
+}
+
+.first-icon {
+  margin-left: 0;
 }
 
 /* .hover-text::before {
@@ -107,19 +110,21 @@ aside img {
 } */
 
 .hover-text {
+  display: none;
   position: absolute;
-  top: 30px;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: gray;
   font-size: 1rem;
-  opacity: 0;
   color: #fff;
-  pointer-events: none;
+  /* pointer-events: none; */
   white-space: nowrap;
   padding: 0.3rem 0.5rem;
 }
 
 .icon-container:hover .hover-text {
-  opacity: 1;
+  display: block;
 }
 
 /*styling contacts section */
