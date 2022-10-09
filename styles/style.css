@@ -1,3 +1,7 @@
+/*
+  GENERAL
+*/
+
 html {
   font-size: 16px;
 }
@@ -11,34 +15,47 @@ h2 {
   font-size: 2rem;
 }
 
-p, a {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.2rem;
+h3 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.8rem;
+  margin: 1rem 0;
 }
 
-/* styling the header */
+p, a, li {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+}
+
+em {
+  font-style: italic;
+}
+
+/*
+  STYLING THE HEADER
+*/
 header {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 1rem 1rem 4rem;
+  padding: 2rem 4rem;
   align-items: center;
+  box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 
-nav {
-  width: 48%;
-}
-
-nav li{
+nav ul {
   list-style-type: none;
-  float: left;
-  padding: 0 2rem;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 0 1rem;
+  margin: 0 1rem;
 }
 
 nav a {
   text-decoration: none;
-  color: black;
+  color: #000;
   text-transform: uppercase;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
@@ -46,115 +63,59 @@ nav a:hover {
   color: gray;
 }
 
-/*styling about me section */
-#about-me {
-  display: inline-block;
-  max-height: 550px;
+/*
+  GENERAL MAIN STYLINg
+*/
+
+main {
+  padding: 2rem 4rem;
 }
 
-.text-container {
-  width: 50%;
-  float: left;
-  padding: 2rem 2rem 2rem 4rem;
+section {
+  padding: 1rem 0;
+  margin-bottom: 2rem;
 }
 
-.text-container h2 {
-  margin-top: 0;
-}
+/*
+  STYLING THE FOOTER
+*/
 
-aside {
+hr {
   display: block;
-  margin: auto;
-  width: 30%;
-  height: 550px;
-  float: right;
-  padding-top: 2rem;
 }
 
-aside img {
-  height: 60%;
-  border-radius: 5%;
+footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 0 4rem;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
 }
 
-/*styling projects section */
-#projects {
-  padding: 0 4rem;
-}
-
-/*styling skills section */
-#skills {
-  padding: 0 4rem;
-  height: 10rem;
-}
-
-.skills-icons-container {
-  display: inline-flex;
-}
-
-.icon-container {
-  position: relative;
-  padding: 1rem;
-  margin: 0 1rem;
-}
-
-.first-icon {
-  margin-left: 0;
-}
-
-/* .hover-text::before {
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-bottom: 5px solid gray;
-} */
-
-.hover-text {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: gray;
+.contacts a, .contacts p, .github-link a, .github-link p {
+  display: block;
+  text-align: left;
   font-size: 1rem;
-  color: #fff;
-  /* pointer-events: none; */
-  white-space: nowrap;
-  padding: 0.3rem 0.5rem;
 }
 
-.icon-container:hover .hover-text {
-  display: block;
+.fa-linkedin {
+  margin-left: 0.2rem;
 }
 
-/*styling contacts section */
-#contacts {
-  padding: 0 4rem;
-  margin-top: 1.5rem;
-}
-
-#contacts i {
-  margin-right: 1.5rem;
-}
-
-#contacts a {
+.contacts a, .github-link a {
+  color: #000;
   text-decoration: none;
-  color: black;
+  margin: 1rem 0;
 }
 
-#contacts a:hover {
+.github-link a {
+  margin-top: 1.8rem;
+}
+
+.contacts a:hover, .github-link a:hover {
   color: gray;
 }
 
-/*styling footer section */
-footer {
-  display: inline-flex;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
-}
-
-footer p {
-  font-size: 1rem;
-  padding: 1rem 0;
+.copyright i, .copyright p {
+  display: inline-block;
 }

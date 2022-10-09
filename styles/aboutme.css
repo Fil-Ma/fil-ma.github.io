@@ -1,0 +1,98 @@
+/*
+  STYLING THE ABOUT ME PAGE
+  -- about me
+*/
+
+.informations {
+  max-height: 20rem;
+  position: relative;
+}
+
+.text-container, .portrait-container {
+  display: inline-block;
+}
+
+.portrait-container {
+  width: 15%;
+}
+
+.portrait-container img {
+  width: 100%;
+  border-radius: 2%;
+}
+
+.text-container {
+  position: absolute;
+  top: 0;
+  margin-left: 5rem;
+  width: calc(100% - 15% - 6rem);
+}
+
+.text-container p {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+/*
+  STYLING THE ABOUT ME PAGE
+  -- knowledge
+*/
+
+.knowledge-list-container {
+  width: 100%;
+}
+
+.knowledge-list-container p {
+  margin-bottom: 1.2rem;
+}
+
+.knowledge-list-container ul {
+  list-style-type: square;
+  margin-left: 2rem;
+}
+
+.knowledge-list-container li:not(:last-child) {
+    margin-bottom: 1.2rem;
+}
+
+/*
+  STYLING THE ABOUT ME PAGE
+  -- skills
+*/
+
+.skills p {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.icon-container {
+  position: relative;
+  padding: 1rem;
+  margin: 0 1rem;
+}
+
+.skills-icons-container {
+  display: inline-flex;
+  padding: 1.5rem 0;
+}
+
+.first-icon {
+  margin-left: 0;
+}
+
+.hover-text {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: gray;
+  font-size: 1rem;
+  color: #fff;
+  white-space: nowrap;
+  padding: 0.3rem 0.5rem;
+}
+
+.icon-container:hover .hover-text {
+  display: block;
+}
