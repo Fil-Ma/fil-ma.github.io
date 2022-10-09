@@ -20,6 +20,18 @@
   width: 48%;
 }
 
+@media only screen and (max-width: 840px) {
+  .cover-container, .project-description {
+    display: block;
+    width: 100%;
+  }
+}
+
+/*
+  STYLING THE PROJECTS PAGE
+  -- project title
+*/
+
 .project-title h3, .project-title a {
   display: inline-block;
 }
@@ -33,6 +45,11 @@
 .project-title a:hover, .fa-circle-exclamation {
   color: gray;
 }
+
+/*
+  STYLING THE PROJECTS PAGE
+  -- project notice and popup
+*/
 
 .notice {
   margin-bottom: 1.5rem;
@@ -58,6 +75,11 @@
   bottom: 0;
   transform: translateX(100%);
 }
+
+/*
+  STYLING THE PROJECTS PAGE
+  -- description container
+*/
 
 .description-container p {
   text-align: justify;
