@@ -8,6 +8,7 @@ html {
 
 body {
   margin: 0;
+  color: #191919;
 }
 
 h2 {
@@ -24,6 +25,15 @@ h3 {
 p, a, li {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.1rem;
+  color: #191919;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: gray;
 }
 
 em {
@@ -52,15 +62,43 @@ nav ul {
 }
 
 nav a {
-  text-decoration: none;
-  color: #000;
+  color: #191919;
   text-transform: uppercase;
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-nav a:hover {
-  color: gray;
+.hamburger {
+  display: none;
+}
+
+.hamburger i {
+  color: #191919;
+}
+
+#hamburger-menu {
+  display: none;
+  position: fixed;
+  width: 10rem;
+  height: 100%;
+  background-color: #ECEFF1;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+  padding: 6rem 2rem;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#hamburger-menu .close-icon {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+
+.hamburger-link {
+  display: block;
+  margin-bottom: 1.5rem;
+  text-decoration: underline;
 }
 
 /*
@@ -80,19 +118,25 @@ section {
   STYLING THE FOOTER
 */
 
-hr {
-  display: block;
-}
-
 footer {
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
   margin: 0 4rem;
   padding: 2rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.footer-links-container {
   display: flex;
   justify-content: space-between;
 }
 
-.contacts a, .contacts p, .github-link a, .github-link p {
+.contacts {
+  margin-right: 5rem;
+}
+
+.contacts a,
+.contacts p,
+.github-link a,
+.github-link p {
   display: block;
   text-align: left;
   font-size: 1rem;
@@ -102,8 +146,9 @@ footer {
   margin-left: 0.2rem;
 }
 
-.contacts a, .github-link a {
-  color: #000;
+.contacts a,
+.github-link a {
+  color: #191919;
   text-decoration: none;
   margin: 1rem 0;
 }
@@ -112,10 +157,53 @@ footer {
   margin-top: 1.8rem;
 }
 
-.contacts a:hover, .github-link a:hover {
+.contacts a:hover,
+.github-link a:hover {
   color: gray;
+}
+
+.copyright {
+  margin-bottom: 2rem;
 }
 
 .copyright i, .copyright p {
   display: inline-block;
+  font-size: 1rem;
+}
+
+/*
+  RESPONSIVE PROPERTIES
+*/
+
+@media only screen and (max-width: 690px) {
+  /* about me page */
+  header {
+    padding: 1.5rem 2rem;
+  }
+
+  footer {
+    margin: 0 2rem;
+  }
+
+  main {
+    padding: 1rem 2rem;
+  }
+
+  nav {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .footer-links-container {
+    display: block;
+  }
+
+  .contacts {
+    margin-bottom: 4rem;
+    margin-right: 0;
+  }
 }

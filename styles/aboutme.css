@@ -32,18 +32,6 @@
   line-height: 1.5;
 }
 
-@media only screen and (max-width: 1300px) {
-  .portrait-container {
-    height: 25rem;
-  }
-}
-
-@media only screen and (max-width: 750px) {
-  .portrait-container {
-    height: 30rem;
-  }
-}
-
 /*
   STYLING THE ABOUT ME PAGE
   -- knowledge
@@ -76,19 +64,24 @@
   line-height: 1.5;
 }
 
+.skills-icons-container {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  padding: 0.5rem 0;
+  flex-flow: row wrap;
+  width: 60%;
+}
+
 .icon-container {
   position: relative;
-  padding: 1rem;
-  margin: 0 1rem;
+  padding: 1rem 0;
+  margin: 1rem 0;
 }
 
-.skills-icons-container {
-  display: inline-flex;
-  padding: 1.5rem 0;
-}
-
-.first-icon {
-  margin-left: 0;
+.line-break {
+  width: 100%;
+  display: none;
 }
 
 .hover-text {
@@ -106,4 +99,55 @@
 
 .icon-container:hover .hover-text {
   display: block;
+}
+
+/*
+  RESPONSIVE PROPERTIES
+*/
+
+@media only screen and (max-width: 1300px) {
+  .portrait-container {
+    height: 25rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .skills-icons-container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .portrait-container {
+    height: 30rem;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .portrait-container {
+    display: none;
+  }
+
+  .text-container {
+    display: block;
+    position: relative;
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .line-break {
+    display: block;
+  }
+
+  .skills-icons-container {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .skills-icons-container {
+    width: 100%;
+  }
 }

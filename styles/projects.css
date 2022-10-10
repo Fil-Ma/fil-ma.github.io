@@ -20,13 +20,6 @@
   width: 48%;
 }
 
-@media only screen and (max-width: 840px) {
-  .cover-container, .project-description {
-    display: block;
-    width: 100%;
-  }
-}
-
 /*
   STYLING THE PROJECTS PAGE
   -- project title
@@ -39,7 +32,7 @@
 .project-title a {
   font-size: 1rem;
   margin-left: 0.5rem;
-  color: #000;
+  color: #191919;
 }
 
 .project-title a:hover, .fa-circle-exclamation {
@@ -84,4 +77,15 @@
 .description-container p {
   text-align: justify;
   line-height: 1.5;
+}
+
+/*
+  RESPONSIVE PROPERTIES
+*/
+
+@media only screen and (max-width: 840px) {
+  .cover-container, .project-description {
+    display: block;
+    width: 100%;
+  }
 }

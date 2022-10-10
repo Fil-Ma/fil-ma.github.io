@@ -27,6 +27,8 @@
     <link href="../styles/style.css" rel="stylesheet" type="text/css">
     <link href="../styles/aboutme.css" rel="stylesheet" type="text/css">
 
+    <!-- linking javascript -->
+    <script src="../scripts/main.js" defer></script>
   </head>
   <body>
 
@@ -43,6 +45,22 @@
           <li class="nav-link"><a href="./projects.html">Projects</a></li>
         </ul>
       </nav>
+
+      <!-- mobile nav -->
+      <div class="hamburger">
+        <a href="javascript:void(0);" class="icon" onclick="handleClickHanburger()">
+          <i class="fa-solid fa-bars fa-2xl"></i>
+        </a>
+
+        <div id="hamburger-menu">
+          <a href="javascript:void(0);" class="close-icon" onclick="handleClickHanburger()">
+            <i class="fa-solid fa-xmark fa-2xl"></i>
+          </a>
+          <a href="../index.html" class="hamburger-link">Home</a>
+          <a href="./projects.html" class="hamburger-link">Projects</a>
+        </div>
+
+      </div>
     </header>
 
     <!-- main content -->
@@ -50,7 +68,7 @@
 
       <!-- about me section -->
       <section class="informations">
-        
+
         <!-- profile image -->
         <div class="portrait-container">
           <img src="../images/IMG_20210425_133758.jpg" alt="Profile Photo">
@@ -113,6 +131,8 @@
             <div class="hover-text">Node JS</div>
           </div>
 
+          <div class="line-break"></div>
+
           <div class="icon-container">
             <i class="fa-brands fa-react fa-2xl"></i>
             <div class="hover-text">React</div>
@@ -128,6 +148,8 @@
             <div class="hover-text">Git</div>
           </div>
 
+          <div class="line-break"></div>
+
         </div>
       </section>
 
@@ -135,20 +157,22 @@
 
     <!-- footer section -->
     <footer>
-      <div class="contacts">
-        <p>Feel free to contact me:</p>
-        <a href="mailto:filippo.mazzalai@gmail.com"><i class="fa fa-paper-plane fa-lg"></i> Email</a>
-        <a href="https://www.linkedin.com/in/filippo-mazzalai/" target="_blank"><i class="fa-brands fa-linkedin fa-lg"></i> Linkedin</a>
-      </div>
-
-      <div class="github-link">
-        <p>Visit my github repository to check <br> the source code of my projects:</p>
-        <a href="https://github.com/Fil-Ma" target="_blank"><i class="fa-brands fa-github fa-lg"></i> https://github.com/Fil-Ma</a>
-      </div>
-
       <div class="copyright">
         <i class="fa-regular fa-copyright"></i>
         <p>2022 Filippo Mazzalai</p>
+      </div>
+
+      <div class="footer-links-container">
+        <div class="contacts">
+          <p>Feel free to contact me:</p>
+          <a href="mailto:filippo.mazzalai@gmail.com"><i class="fa fa-paper-plane fa-lg"></i> Email</a>
+          <a href="https://www.linkedin.com/in/filippo-mazzalai/" target="_blank"><i class="fa-brands fa-linkedin fa-lg"></i> Linkedin</a>
+        </div>
+
+        <div class="github-link">
+          <p>Visit my github repository to check the source code of my projects:</p>
+          <a href="https://github.com/Fil-Ma" target="_blank"><i class="fa-brands fa-github fa-lg"></i> https://github.com/Fil-Ma</a>
+        </div>
       </div>
     </footer>
 
