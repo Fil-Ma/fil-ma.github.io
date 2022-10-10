@@ -9,10 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- og graph metadata -->
-    <meta property="og:title" content="Filippo Mazzalai, web developer" />
+    <meta property="og:title" content="Filippo Mazzalai: Full-Stack Website Developer" />
     <meta property="og:url" content="https://www.filippomazzalai.me"/>
     <meta property="og:type" content="website" />
-    <meta property="og:description" content="Full-Stack web developer, specialized in Javascript, React and Node JS" />
+    <meta property="og:description" content="Web developer portfolio website. Full stack-developer specialized in Javascript, React and Node JS." />
 
     <!-- favicon paths -->
     <link rel="icon" type="image/x-icon" href="./images/favicon/favicon.ico">
@@ -24,7 +24,7 @@
 
     <!-- linking css styling files -->
     <link href="./styles/reset.css" rel="stylesheet" type="text/css">
-    <link href="./styles/style.css" rel="stylesheet" type="text/css">
+    <link href="./styles/home.css" rel="stylesheet" type="text/css">
 
     <!-- linking javascript -->
     <script src="./scripts/main.js" defer></script>
@@ -33,38 +33,33 @@
 
     <!-- header section -->
     <header>
-      <div class="name">
-        <h2>Filippo Mazzalai</h2>
-      </div>
-
-      <!-- navigation links -->
-      <nav>
-        <ul>
-          <li class="nav-link"><a href="./pages/aboutme.html">About me</a></li>
-          <li class="nav-link"><a href="./pages/projects.html">Projects</a></li>
-        </ul>
-      </nav>
-
-      <!-- mobile nav -->
-      <div class="hamburger">
-        <a href="javascript:void(0);" class="icon" onclick="handleClickHanburger()">
-          <i class="fa-solid fa-bars fa-2xl"></i>
+      <div class="social-container">
+        <a href="mailto:filippo.mazzalai@gmail.com">
+          <i class="fa fa-paper-plane fa-xl"></i>
         </a>
-
-        <div id="hamburger-menu">
-          <a href="javascript:void(0);" class="close-icon" onclick="handleClickHanburger()">
-            <i class="fa-solid fa-xmark fa-2xl"></i>
-          </a>
-          <a href="./pages/aboutme.html" class="hamburger-link">About me</a>
-          <a href="./pages/projects.html" class="hamburger-link">Projects</a>
-        </div>
-
+        <a href="https://www.linkedin.com/in/filippo-mazzalai/" target="_blank">
+          <i class="fa-brands fa-linkedin fa-xl"></i>
+        </a>
+        <a href="https://github.com/Fil-Ma" target="_blank">
+          <i class="fa-brands fa-github fa-xl"></i>
+        </a>
       </div>
     </header>
 
     <!-- main content -->
-    <main>
-      <p>This page is currently under mantainance</p>
+    <main id="home">
+      <div class="name-container">
+        <div class="box">
+          <p>Hi! I am Filippo Mazzalai, a full-stack developer and tech enthusiast</p>
+          <p>Welcome to my portfolio</p>
+        </div>
+      </div>
+
+      <div class="link-container">
+        <a href="./pages/aboutme.html" class="about">About me</a>
+        <a href="./pages/projects.html" class="projects">Projects</a>
+      </div>
+
     </main>
 
   </body>
