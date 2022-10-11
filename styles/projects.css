@@ -20,6 +20,10 @@
   width: 48%;
 }
 
+.cover-container img {
+  width: 100%;
+}
+
 /*
   STYLING THE PROJECTS PAGE
   -- project title
