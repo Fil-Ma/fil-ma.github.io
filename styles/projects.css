@@ -17,7 +17,11 @@
 
 .cover-container, .project-description {
   display: inline-block;
-  width: 45%;
+  width: 48%;
+}
+
+.project-description {
+  margin-left: 2rem;
 }
 
 .cover-container img {
@@ -41,6 +45,10 @@
 
 .project-title a:hover, .fa-circle-exclamation {
   color: gray;
+}
+
+.project-title .project-link-icon {
+  display: none;
 }
 
 /*
@@ -87,9 +95,33 @@
   RESPONSIVE PROPERTIES
 */
 
-@media only screen and (max-width: 840px) {
+@media only screen and (max-width: 1300px) {
   .cover-container, .project-description {
     display: block;
     width: 100%;
   }
+
+  .project-description {
+    margin-left: 0;
+  }
+
+  .project-title .project-link-icon {
+    display: inline-block;
+  }
+
+  .project-title .project-link-extended {
+    display: inline-block;
+  }
+
+}
+
+@media only screen and (max-width: 410px) {
+  .project-title .project-link-icon {
+    display: inline-block;
+  }
+
+  .project-title .project-link-extended {
+    display: none;
+  }
+
 }
