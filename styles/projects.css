@@ -58,12 +58,15 @@
 
 .notice {
   margin-bottom: 1.5rem;
-  position: relative;
   max-width: 13rem;
 }
 
 .notice p {
   font-size: 0.9rem;
+}
+
+.note, .popup-container {
+  display: inline-block;
 }
 
 .note-popup {
@@ -78,7 +81,15 @@
   position: absolute;
   right: 0;
   bottom: 0;
-  transform: translateX(100%);
+  transform: translateX(105%);
+}
+
+.popup-container {
+  position: relative;
+}
+
+.popup-container:hover .note-popup {
+  display: block;
 }
 
 /*
@@ -106,13 +117,20 @@
   }
 
   .project-title .project-link-icon {
-    display: inline-block;
+    display: none;
   }
 
   .project-title .project-link-extended {
     display: inline-block;
   }
+}
 
+@media only screen and (max-width: 425px) {
+  .note-popup {
+    right: 0;
+    bottom: 0;
+    transform: translate(20%, -20%);
+  }
 }
 
 @media only screen and (max-width: 410px) {
@@ -123,5 +141,4 @@
   .project-title .project-link-extended {
     display: none;
   }
-
 }
