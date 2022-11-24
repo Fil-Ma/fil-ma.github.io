@@ -11,17 +11,24 @@
   margin-bottom: 1.5rem;
 }
 
+.project {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
 .projects-container {
   width: 100%;
 }
 
-.cover-container, .project-description {
-  display: inline-block;
+.cover-container {
   width: 48%;
+  padding-top: 1rem;
 }
 
 .project-description {
-  margin-left: 2rem;
+  width: 48%;
 }
 
 .cover-container img {
@@ -45,6 +52,10 @@
 
 .project-title a:hover, .fa-circle-exclamation {
   color: gray;
+}
+
+.project-title .project-link-extended, .demo-link {
+  text-decoration: underline;
 }
 
 .project-title .project-link-icon {
