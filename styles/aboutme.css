@@ -18,6 +18,7 @@
 .portrait-container img {
   width: 100%;
   border-radius: 2%;
+  max-width: 233px;
 }
 
 .text-container {

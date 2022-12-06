@@ -47,7 +47,6 @@
 .project-title a {
   font-size: 1rem;
   margin-left: 0.5rem;
-  color: #191919;
 }
 
 .project-title a:hover, .fa-circle-exclamation {
@@ -118,11 +117,6 @@
 */
 
 @media only screen and (max-width: 1300px) {
-  .cover-container, .project-description {
-    display: block;
-    width: 100%;
-  }
-
   .project-description {
     margin-left: 0;
   }
@@ -136,11 +130,21 @@
   }
 }
 
+@media only screen and (max-width: 950px) {
+  .cover-container {
+    display: none;
+  }
+
+  .project-description {
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 425px) {
   .note-popup {
     right: 0;
-    bottom: 0;
-    transform: translate(20%, -20%);
+    bottom: 150%;
+    transform: translateX(-2%);  
   }
 }
 
